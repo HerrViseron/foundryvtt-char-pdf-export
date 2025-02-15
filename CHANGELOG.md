@@ -1,3 +1,7 @@
+## v0.0.3
+- Added, well this thing here...
+- some readme formatting
+
 ## v0.0.2
 - Hello World!
 
