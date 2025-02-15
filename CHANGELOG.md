@@ -1,3 +1,6 @@
+## v0.0.7
+- Basic logging functionality
+
 ## v0.0.6
 - Removed helloworld.js
 - added char-pdf-export.js to module.json
