@@ -1,3 +1,6 @@
+## v0.0.8
+- changed Hook application
+
 ## v0.0.7
 - Basic logging functionality
 
