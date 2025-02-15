@@ -1,3 +1,7 @@
+## v0.0.5
+- Basic Class declarations
+- Added PDF Export Button to the Char Sheer Header
+
 ## v0.0.4
 - Localization support
 - Setup basic folder structure for the module
