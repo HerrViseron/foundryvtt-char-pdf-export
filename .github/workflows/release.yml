@@ -46,6 +46,7 @@ jobs:
           download: https://github.com/${{github.repository}}/releases/download/${{steps.get_version.outputs.version}}/${{env.ModuleFileName}}
           readme: https://github.com/${{github.repository}}/blob/${{steps.get_version.outputs.version}}/README.md
           license: https://github.com/${{github.repository}}/blob/${{steps.get_version.outputs.version}}/LICENSE
+          changelog: https://github.com/${{github.repository}}/blob/${{steps.get_version.outputs.version}}/CHANGELOG.md
           bugs: https://github.com/${{github.repository}}/issues
 
       # Runs a single command using the runners shell
