@@ -1,1 +1,1 @@
-console.log('char-pdf-export | Hello World! Release v0.0.1')
+console.log('char-pdf-export | Hello World! Release v0.0.1 (try 2)')
