@@ -2,7 +2,7 @@
 - Localization support
 - Setup basic folder structure for the module
 - Template support
-- Style support
+- Style support 
 
 ## v0.0.3
 - Added, well this thing here...
