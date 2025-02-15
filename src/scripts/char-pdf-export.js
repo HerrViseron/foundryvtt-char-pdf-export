@@ -13,7 +13,7 @@ class CharPDFExport {
     }
 }
 
-Hooks.on('renderActorSheet5eCharacter', (ActorSheet5eCharacter2, html) => {
+Hooks.on('renderActorSheet5eCharacter', (actorSheet5eCharacter2, html) => {
     const charSheetHeaderCopyUUIDItem = html.find(`[data-tooltip="SHEETS.CopyUuid"]`)
     
     CharPDFExport.log("Hook executed");
