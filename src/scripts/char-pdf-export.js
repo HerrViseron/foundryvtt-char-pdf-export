@@ -6,10 +6,17 @@ class CharPDFExport {
     static TEMPLATES = {
         CHARPDFEXPORT: `modules/${this.ID}/templates/char-pdf-export.hbs`
     }
+
+    //A basic logging function
+    static log(...args) {
+        console.log(this.ID, ' | ', ...args);
+    }
 }
 
 Hooks.on('renderActorSheet5eCharacter', (ActorSheet5eCharacter2, html) => {
     const charSheetHeaderCopyUUIDItem = html.find(`[data-tooltip="SHEETS.CopyUuid"]`)
+    
+    CharPDFExport.log("Hook executed");
 
     const tooltip = game.i18n.localize('CHAR-PDF-EXPORT.PDFHeaderButton')
     charSheetHeaderCopyUUIDItem.before(
