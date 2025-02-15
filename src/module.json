@@ -1,0 +1,15 @@
+{
+    "name": "char-pdf-export",
+    "title": "Character Sheet PDF export",
+    "description": "A module to provide the functionality to export Character Data as PDF Character Sheet",
+    "authors": [
+        {
+            "name": "Viseron"
+        }
+    ],
+    "version": "0.0.1",
+    "compatibility": {
+        "minimum": "12",
+        "verified": "12.331"
+  }
+}
