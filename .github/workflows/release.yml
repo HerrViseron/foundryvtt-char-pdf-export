@@ -61,5 +61,5 @@ jobs:
           allowUpdates: true
           name: Release ${{steps.get_version.outputs.version}}
           token: ${{secrets.GITHUB_TOKEN}}
-          artifacts: './src/${{env.ManifestFileName}}, ./src/${{env.ModuleFileName}}'
+          artifacts: './src/${{env.ManifestFileName}}, ./${{env.ModuleFileName}}'
           tag: ${{ github.ref }}
