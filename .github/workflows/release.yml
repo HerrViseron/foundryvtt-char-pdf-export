@@ -52,7 +52,7 @@ jobs:
       - name: Create Packages Module ZIP
         run: |
           cp README.md LICENSE src/
-          zip -r $ModuleFileName ./src/*
+          zip -r ${{env.ModuleFileName}} ./src/*
 
       - name: Add Files to Release
         id: create_version_release
@@ -60,6 +60,6 @@ jobs:
         with:
           allowUpdates: true
           name: Release ${{steps.get_version.outputs.version}}
-          token: ${{ secrets.RELEASE_TOKEN }}
+          token: ${{secrets.GITHUB_TOKEN}}
           artifacts: './src/${{env.ManifestFileName}}, ./src/${{env.ModuleFileName}}'
           tag: ${{ github.ref }}
