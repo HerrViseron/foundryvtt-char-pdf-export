@@ -12,7 +12,7 @@
         "verified": "12.331"
     },
     "scripts": [
-       "scripts/helloworld.js" 
+       "scripts/char-pdf-export.js" 
     ],
     "languages": [
         {
