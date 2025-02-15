@@ -1,3 +1,7 @@
+## v0.0.6
+- Removed helloworld.js
+- added char-pdf-export.js to module.json
+
 ## v0.0.5
 - Basic Class declarations
 - Added PDF Export Button to the Char Sheer Header
