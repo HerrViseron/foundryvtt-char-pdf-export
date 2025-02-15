@@ -42,8 +42,8 @@ jobs:
         env:
           version: ${{steps.get_version.outputs.version-without-v}}
           url: https://github.com/${{github.repository}}
-          manifest: https://github.com/${{github.repository}}/releases/latest/download/$ManifestFileName
-          download: https://github.com/${{github.repository}}/releases/download/${{steps.get_version.outputs.version}}/$ModuleFileName
+          manifest: https://github.com/${{github.repository}}/releases/latest/download/${{env.ManifestFileName}}
+          download: https://github.com/${{github.repository}}/releases/download/${{steps.get_version.outputs.version}}/${{env.ModuleFileName}}
           readme: https://github.com/${{github.repository}}/blob/${{steps.get_version.outputs.version}}/README.md
           license: https://github.com/${{github.repository}}/blob/${{steps.get_version.outputs.version}}/LICENSE
           bugs: https://github.com/${{github.repository}}/issues
@@ -61,5 +61,5 @@ jobs:
           allowUpdates: true
           name: Release ${{steps.get_version.outputs.version}}
           token: ${{ secrets.RELEASE_TOKEN }}
-          artifacts: './src/$ManifestFileName, ./src/$ModuleFileName'
+          artifacts: './src/${{env.ManifestFileName}}, ./src/${{env.ModuleFileName}}'
           tag: ${{ github.ref }}
