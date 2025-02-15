@@ -1,5 +1,15 @@
 {
     "CHAR-PDF-EXPORT": {
-        "PDFHeaderButton": "Export Char PDF Sheet"
+        "PDFHeaderButton": "Export Char PDF Sheet",
+        "settings": {
+            "enabled": {
+                "Name": "Enabled",
+                "Hint": "Show or hide the PDF Export button on the Character Sheet."
+            },
+            "pdf-file": {
+                "Name": "PDF File",
+                "Hint": "Upload a PDF File which will be used when exporting the Character Sheet."
+            }
+        }
     }
 }
