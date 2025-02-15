@@ -1,3 +1,10 @@
+## v0.0.9
+- Removed some unnecessary files (styles and templates), will be added again if needed
+- Placed a Button at the top of the DnD5e Character Sheet which will trigger the PDF Export later
+- Settings
+  - Enable/Disable
+  - Select PDF File
+
 ## v0.0.8
 - changed Hook application
 
